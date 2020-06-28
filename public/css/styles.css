@@ -1,0 +1,84 @@
+body {
+    color: #080808;
+    font-family: arial;
+    max-width: 650px;
+    margin: 0 auto;
+    padding: 0 16px;
+
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh
+}
+
+.main-content {
+    flex-grow: 1;
+}
+
+footer {
+    color: #0c0000;
+    border-top: 1px solid #eeeeee;
+    margin-top: 16px;
+    padding: 16px 0;
+}
+
+header {
+    margin-top: 16px;
+    margin-bottom: 48px;
+}
+
+h1 {
+    font-size: 64px;
+    margin-bottom: 16px;
+}
+
+header a {
+    color: #131212;
+    margin-right: 16px;
+    text-decoration: none;
+}
+
+.portrait {
+    width: 100px;
+}
+
+input {
+    border: 1px solid #cccccc;
+    padding: 8px;
+}
+
+button {
+    cursor: pointer;
+    border: 1px solid #888888;
+    background: #888888;
+    color: white;
+    padding: 8px;
+}
+
+#forecast {
+    margin-top: 10px;
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  #forecast td, #forecast th {
+    border: 1px solid #ddd;
+    padding: 8px;
+  }
+  
+  #forecast tr:nth-child(even){background-color: #f2f2f2;}
+  
+  #forecast tr:hover {background-color: #ddd;}
+  
+  #forecast th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #4CAF50;
+    color: white;
+  }
+  body{
+      background-image: url('../img/weather1.gif');
+      
+      background-position: center;
+  }

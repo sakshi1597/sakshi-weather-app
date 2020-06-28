@@ -1,0 +1,62 @@
+8<!DOCTYPE html>
+
+<html>
+
+<head>
+   
+    <title>Weather</title>
+    <link rel="icon" href="/img/weather.png">
+    <link rel="stylesheet" href="/css/styles.css">
+
+</head>
+
+<body>
+    <div class="main-content">
+        {{>header}}
+
+        <p>Use this site to get your weather!</p>
+         <form>
+            <input placeholder="Location">
+            <button>Search</button>
+        </form>
+
+    </div>
+    <p id="error" ></p>
+    <table id="forecast">
+        <tbody>
+<tr><td colspan="2">Weather Report</td></tr>
+<tr><td>Temperature</td>
+<td id="temp"></td>
+</tr>
+<tr><td>Humidity</td>
+<td id="humidity"></td>
+</tr>
+<tr>
+    <td>Wind_Speed</td>
+    <td id="wind_speed"></td>
+</tr>
+<tr>
+    <td>Wind Description</td>
+    <td id="wind_descriptions"></td>
+
+</tr>
+<tr><td>Location</td>
+<td id="location"></td>
+</tr>
+
+        </tbody>
+ </table>
+
+    {{>footer}}
+        <script src="/js/app.js"></script>
+        <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+<script>
+        $(document).ready(function(){
+            $('#forecast').hide();
+            $('#error').hide();
+        })
+    </script>
+
+</body>
+
+</html>
